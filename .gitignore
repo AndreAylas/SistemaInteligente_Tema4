@@ -13,3 +13,6 @@ __pycache__/
 
 # csv
 *.csv
+
+#env
+.env
