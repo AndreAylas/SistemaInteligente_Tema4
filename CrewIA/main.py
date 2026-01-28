@@ -1,4 +1,4 @@
-from agentes import construir_two_agen
+from agentes import construir_entrevista_messi, construir_entrevista_messi
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -6,8 +6,8 @@ def main():
     """
     Docstring for main
     """
-    tema="Sistemas Multi-Agentes"
-    crew=construir_two_agen(tema)
+
+    crew=construir_entrevista_messi()
     resultado=crew.kickoff() # poner en marcha los agentes
 
     print("\n--- Resultado Final ---\n")
