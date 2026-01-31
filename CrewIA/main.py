@@ -1,10 +1,10 @@
-from agentes import construir_entrevista_messi, construir_entrevista_messi
+from agentes import construir_entrevista_messi
 from dotenv import load_dotenv
 load_dotenv()
 
 def main():
     """
-    Docstring for main
+      Programa principal: construir y ejecutar la entrevista al Jugador Argentino Messi
     """
 
     crew=construir_entrevista_messi()
@@ -12,7 +12,7 @@ def main():
 
     print("\n--- Resultado Final ---\n")
     print(resultado)
-        # Guardar salida para evidencias en el tutorial
+    # Guardar salida para evidencias en el tutorial
     with open("resultados_ejemplo.txt", "w", encoding="utf-8") as f:
         f.write(str(resultado))
 

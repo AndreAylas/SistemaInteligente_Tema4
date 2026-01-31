@@ -2,7 +2,7 @@ from crewai import Agent, Task, Crew
 
 def construir_entrevista_messi(tema="Mundial 2026"):
     """
-    Sistema multi-agente: entrevista breve a Messi sobre el Mundial 2026
+        Sistema multi-agente: entrevista breve a Messi sobre el Mundial 2026
     """
 
     messi = Agent(
@@ -51,6 +51,6 @@ def construir_entrevista_messi(tema="Mundial 2026"):
         agents=[messi, reportero],
         tasks=[tarea_entrevista, tarea_redaccion],
         verbose=True,
-    )
+    ) #construir el sistema multi-agente
 
     return crew
